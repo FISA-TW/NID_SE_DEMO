@@ -149,7 +149,7 @@
                                                                                                     <tr>
                                                                                                         <td class=style3 width=171>
                                                                                                             <li>
-                                                                                                                <a href="http://netid.fcu.edu.tw/framework/main.jsp?page=newUser" target=_blank>新手上路&nbsp;
+                                                                                                                <a href="javascript:void(0)" target=_blank>新手上路&nbsp;
                                                                                                                     <span class=smallfont>New User</span>
                                                                                                                 </a>
                                                                                                         </td>
@@ -160,7 +160,7 @@
                                                                                                     <tr>
                                                                                                         <td class=style3 height=19>
                                                                                                             <li>
-                                                                                                                <a href="http://netid.fcu.edu.tw/framework/main.jsp?page=enableID" target=_blank>帳號啟用&nbsp;
+                                                                                                                <a href="javascript:void(0)" target=_blank>帳號啟用&nbsp;
                                                                                                                     <span class=smallfont>Enable NID</span>
                                                                                                                 </a>
                                                                                                         </td>
@@ -168,7 +168,7 @@
                                                                                                     <tr>
                                                                                                         <td class=style3>
                                                                                                             <li>
-                                                                                                                <a href="http://netid.fcu.edu.tw/framework/main.jsp?page=forgetPwd" target=_blank>忘記密碼&nbsp;
+                                                                                                                <a href="javascript:void(0)" target=_blank>忘記密碼&nbsp;
                                                                                                                     <span class=smallfont>Forgot Your Password</span>
                                                                                                                 </a>
                                                                                                         </td>
@@ -178,15 +178,13 @@
                                                                                                     </tr>
                                                                                                     <tr>
                                                                                                         <td colspan=2>
-                                                                                                            <li>&nbsp;<span class=style11>MyMail注意事項說明文件
-                                                                                                                            User Guide&nbsp;<a href="http://netid.fcu.edu.tw/modules/ID_M_fileRepository/MyMailQuickStartGuide.htm" target=_blank>[html]</a> | <a class=smallfont href="http://netid.fcu.edu.tw/modules/ID_M_fileRepository/MyMailQuickStartGuide.pdf" target=_blank>[PDF]</a></span>
+                                                                                                            <li>&nbsp;<span class=style11>MyMail注意事項說明文件 User Guide&nbsp;<a href="javascript:void(0)" target=_blank>[html]</a> | <a class=smallfont href="javascript:void(0)" target=_blank>[PDF]</a></span>
                                                                                                             </li>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                     <tr>
                                                                                                         <td colspan=2>
-                                                                                                            <li>&nbsp;<span class=style11>Multilingual in
-                                                                                                                                        MyMail (English)&nbsp;<a href="http://netid.fcu.edu.tw/modules/ID_M_fileRepository/Change%20IE%20for%20Multilingual%20MyMail_v1.0.htm" target=_blank>[html]</a> | <a class=smallfont href="http://netid.fcu.edu.tw/modules/ID_M_fileRepository/Change%20IE%20for%20Multilingual%20MyMail_v1.0.pdf" target=_blank>[PDF]</a></span>
+                                                                                                            <li>&nbsp;<span class=style11>Multilingual in MyMail (English)&nbsp;<a href="javascript:void(0)" target=_blank>[html]</a> | <a class=smallfont href="javascript:void(0)" target=_blank>[PDF]</a></span>
                                                                                                             </li>
                                                                                                         </td>
                                                                                                     </tr>
@@ -228,7 +226,7 @@
                                     <hr width="80%" size=1>
                                     <P class="style3 style4" align=center>版權所有<span class="word03">&copy;</span> 逢甲大學網路信箱系統內之所有內容及版面設計－著作權屬逢甲大學
                                         <br />
-                                        問題反應或建議<a href="mailto:oit@fcu.edu.tw" target="_blank"> oit@fcu.edu.tw </a>，或請電分機 2712
+                                        問題反應或建議<a href="javascript:void(0)" target="_blank"> oit@fcu.edu.tw </a>，或請電分機 2712
                                         資訊處聯合服務台。
                                     </P>
                                 </td>
