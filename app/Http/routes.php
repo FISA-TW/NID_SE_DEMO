@@ -11,17 +11,26 @@
 |
 */
 
-//首頁
+//Home page
 Route::get('/', [
     'as' => 'home',
     function () {
-        //跳轉至登入頁面
+        //Redirect to fake login page
         return redirect()->route('demo.login-page');
     }
 ]);
 
-//登入頁面
+//Fake login page
 Route::get('coursequest', [
     'as' => 'demo.login-page',
     'uses' => 'DemoController@getLoginPage'
 ]);
+
+//Undefined route
+Route::get('{all}', array(
+    'as' => 'not-found',
+    function () {
+        //Redirect to home page
+        return redirect()->route('home');
+    }
+))->where('all', '.*');
