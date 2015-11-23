@@ -12,10 +12,13 @@
 */
 
 //首頁
-Route::get('/', function () {
-    //跳轉至登入頁面
-    return redirect()->route('demo.login-page');
-});
+Route::get('/', [
+    'as' => 'home',
+    function () {
+        //跳轉至登入頁面
+        return redirect()->route('demo.login-page');
+    }
+]);
 
 //登入頁面
 Route::get('coursequest', [
