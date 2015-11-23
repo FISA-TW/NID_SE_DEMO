@@ -1,0 +1,147 @@
+.forumline {
+    border: 2px #FFE9AC solid;
+}
+
+tr.row0 {
+    background-color: #760000;
+    color: #EEEEEE
+}
+
+tr.row1 {
+    background-color: #FFE9AC;
+    color: #760000
+}
+
+tr.row2 {
+    background-color: #FDF0CD;
+    color: #760000
+}
+
+tr.row3 {
+    background-color: #FFBDBD;
+    color: #760000
+}
+
+tr.row4 {
+    background-color: #EFEDED;
+    color: #760000
+}
+
+th {
+    font-family: Verdana, 標楷體, Helvetica, sans-serif
+}
+
+th {
+    background-color: #760000;
+    font-size: 14px;
+    color: #EEEEEE
+}
+
+td {
+    font-family: Verdana, 標楷體, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+td.row0 {
+    background-color: #760000;
+    color: #EEEEEE
+}
+
+td.row1 {
+    background-color: #FFBDBD;
+    color: #760000
+}
+
+td.row2 {
+    background-color: #EFEDED;
+    color: #760000
+}
+
+td.row3 {
+    background-color: #FFE9AC;
+    color: #760000
+}
+
+td.row4 {
+    background-color: #FDF0CD;
+    color: #760000
+}
+
+.gensmall {
+    font-size: 10px;
+}
+
+.gensmall {
+    color: #000000;
+}
+
+a:active {
+    color: #760000
+}
+
+a:link {
+    color: #760000
+}
+
+a:visited {
+    color: #760000
+}
+
+a:hover {
+    color: #760000
+}
+
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif
+}
+
+.gen {
+    font-size: 12px;
+}
+
+.gen {
+    color: #000000;
+}
+
+input {
+    color: #000000;
+    font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+input {
+    text-indent: 2px;
+}
+
+input.post {
+    background-color: #FFFFFF;
+}
+
+OPTION {
+    font-size: 12px;
+}
+
+input.liteoption {
+    background-color: #FAFAFA;
+    font-weight: normal;
+}
+
+td.catBottom {
+    background-image: url('img/cellpic1.gif');
+    background-color: #D1D7DC;
+    border: medium solid #FFFFFF;
+    height: 28px
+}
+
+td.catBottom {
+    height: 29px;
+    border-width: 0px 0px 0px 0px;
+}
+
+td.catBottom {
+    border-width: 0px 1px 1px 1px;
+}
+
+input.mainoption {
+    background-color: #FAFAFA;
+}

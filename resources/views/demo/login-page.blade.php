@@ -47,14 +47,14 @@
                     <td>
                         <table id="table_01" width="989" height="585" border="0" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td colspan="3"><img src="img/login_01.jpg" width="989" height="98" alt=""></td>
+                                <td colspan="3"><img src="{{ asset('img/login_01.jpg') }}" width="989" height="98" alt=""></td>
                             </tr>
                             <tr>
-                                <td><img src="img/login_02.jpg" width="176" height="61" alt=""></td>
+                                <td><img src="{{ asset('img/login_02.jpg') }}" width="176" height="61" alt=""></td>
                                 <td width="635" height="61" bgcolor="#FFFFFF">
                                     <div align="center"><span class="style13">逢甲大學 課程檢索系統</span></div>
                                 </td>
-                                <td><img src="img/login_04.jpg" width="178" height="61" alt=""></td>
+                                <td><img src="{{ asset('img/login_04.jpg') }}" width="178" height="61" alt=""></td>
                             </tr>
                             <tr>
                                 <td height="426" colspan="3" bordercolor="#FFFFFF" bgcolor="#FFFFFF">
@@ -66,11 +66,11 @@
                                                     <tbody>
                                                     <tr>
                                                         <td vAlign=bottom>
-                                                            <img height=38 alt=photo src="img/LOGIN_1.gif" width=342>
+                                                            <img height=38 alt=photo src="{{ asset('img/LOGIN_1.gif') }}" width=342>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td width=342 background=img/LOGIN_2.gif height="100%">
+                                                        <td width=342 background={{ asset('img/LOGIN_2.gif') }} height="100%">
                                                             <table cellSpacing=1 cellPadding=0 width="80%" align=center summary=table border=0>
                                                                 <tbody>
                                                                 <tr>
@@ -111,7 +111,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td vAlign=top>
-                                                            <img height=22 alt=photo src="img/LOGIN_3.gif" width=342>
+                                                            <img height=22 alt=photo src="{{ asset('img/LOGIN_3.gif') }}" width=342>
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -130,11 +130,11 @@
                                                                             <tbody>
                                                                             <tr>
                                                                                 <td>
-                                                                                    <img height=38 alt=PHOTO src="img/whatsnew_2-1.gif" width=356>
+                                                                                    <img height=38 alt=PHOTO src="{{ asset('img/whatsnew_2-1.gif') }}" width=356>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td align=middle background=img/whatsnew_2-2.gif>
+                                                                                <td align=middle background={{ asset('img/whatsnew_2-2.gif') }}>
                                                                                     <table cellSpacing=0 cellPadding=0 width="97%" border=0>
                                                                                         <tbody>
                                                                                         <tr>
@@ -154,7 +154,7 @@
                                                                                                                 </a>
                                                                                                         </td>
                                                                                                         <td width=113 rowspan=3>
-                                                                                                            <img height=52 alt=midlogo src="img/nid.gif" width=113>
+                                                                                                            <img height=52 alt=midlogo src="{{ asset('img/nid.gif') }}" width=113>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                     <tr>
@@ -198,7 +198,7 @@
                                                                             </tr>
                                                                             <tr>
                                                                                 <td vAlign=top align=left>
-                                                                                    <img height=7 alt=PHOTO src="img/whatsnew_2-3.gif" width=356>
+                                                                                    <img height=7 alt=PHOTO src="{{ asset('img/whatsnew_2-3.gif') }}" width=356>
                                                                                 </td>
                                                                             </tr>
                                                                             </tbody>

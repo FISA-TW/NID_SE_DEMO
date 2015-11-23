@@ -13,4 +13,9 @@ class DemoController extends Controller
     {
         return view('demo.login-page');
     }
+
+    public function getCondition()
+    {
+        return view('demo.condition');
+    }
 }

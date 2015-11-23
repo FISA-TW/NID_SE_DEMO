@@ -26,6 +26,12 @@ Route::get('coursequest', [
     'uses' => 'DemoController@getLoginPage'
 ]);
 
+//Fake condition page
+Route::get('coursequest/condition.jsp', [
+    'as' => 'demo.condition',
+    'uses' => 'DemoController@getCondition'
+]);
+
 //Undefined route
 Route::get('{all}', array(
     'as' => 'not-found',
