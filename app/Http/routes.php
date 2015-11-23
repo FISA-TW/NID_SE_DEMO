@@ -11,6 +11,14 @@
 |
 */
 
+//首頁
 Route::get('/', function () {
-    return view('welcome');
+    //跳轉至登入頁面
+    return redirect()->route('demo.login-page');
 });
+
+//登入頁面
+Route::get('coursequest', [
+    'as' => 'demo.login-page',
+    'uses' => 'DemoController@getLoginPage'
+]);
