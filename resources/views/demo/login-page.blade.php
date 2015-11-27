@@ -41,7 +41,7 @@
     </head>
     <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
         <!-- ImageReady Slices (登入畫面1.jpg) -->
-        <form name="loginForm" method="post" action="condition.jsp">
+        {!! Form::open(['route' => 'demo.login-page']) !!}
             <table width="200" border="1" align="center" cellpadding="1" bordercolor="#A42310">
                 <tr bordercolor="#FFFFFF">
                     <td>
@@ -235,7 +235,7 @@
                     </td>
                 </tr>
             </table>
-        </form>
+        {!! Form::close() !!}
         <!-- End ImageReady Slices -->
     </body>
 </html>
