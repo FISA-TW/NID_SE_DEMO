@@ -82,7 +82,7 @@
                                                                                     </span>
                                                                     </td>
                                                                     <td width="60%"><span class=Propinput>
-                                                                                    <input id=IDToken1 style="WIDTH: 100%" tabIndex=1 name="userID">
+                                                                                    {!! Form::text('userID', null, ['id' => 'IDToken1', 'style' => 'WIDTH: 100%', 'tabIndex' => 1]) !!}
                                                                                     </span>
                                                                     </td>
                                                                 </tr>
@@ -95,14 +95,17 @@
                                                                                     </span>
                                                                     </td>
                                                                     <td width="60%"><span class=Proplabel>
-                                                                                    <input id=IDToken2 style="WIDTH: 100%" tabIndex=2 type=password name="userPW">
+                                                                                    {!! Form::password('userPW', ['id' => 'IDToken2', 'style' => 'WIDTH: 100%', 'tabIndex' => 2]) !!}
                                                                                     </span>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td></td>
                                                                     <td class=logBtn>
-                                                                        <input class=Btn1Def id=button onBlur="this.className='Btn1Def'" onMouseOver="this.className='Btn1DefHov'" title=登入 onFocus="this.className='Btn1DefHov'" tabIndex=3 onMouseOut="this.className='Btn1Def'" type=submit value=登入 name=Button2>
+                                                                        {!! Form::submit('登入', ['class' => 'Btn1Def', 'id' => 'button', 'onBlur' => "this.className='Btn1Def'", 'onMouseOver' => "this.className='Btn1DefHov'", 'title' => '登入', 'onFocus' => "this.className='Btn1DefHov'", 'tabIndex' => 3, 'onMouseOut' => "this.className='Btn1Def'", 'name' => 'Button2']) !!}
+                                                                        @if($errors->has('userID') || $errors->has('userPW'))
+                                                                            <br><font color=red>帳號或密碼輸入錯誤！</font>
+                                                                        @endif
                                                                     </td>
                                                                 </tr>
                                                                 </tbody>

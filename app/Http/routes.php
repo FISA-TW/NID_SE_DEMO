@@ -25,6 +25,10 @@ Route::get('coursequest', [
     'as' => 'demo.login-page',
     'uses' => 'DemoController@getLoginPage'
 ]);
+Route::post('coursequest', [
+    'as' => 'demo.login-page',
+    'uses' => 'DemoController@postLoginPage'
+]);
 
 //Fake condition page
 Route::get('coursequest/condition.jsp', [

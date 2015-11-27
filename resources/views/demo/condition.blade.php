@@ -18,7 +18,7 @@
                         <td align=right bgcolor=white>
                             <span class="gen">
                             <font color=red>
-                                登入：d04xxxxx &nbsp;&nbsp;
+                                登入：{{ $nid }} &nbsp;&nbsp;
                                 <a href="{{ route('demo.login-page') }}">登出</a>
                             </font></span>
                         </td>

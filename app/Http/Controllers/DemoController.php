@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class DemoController extends Controller
 {
@@ -14,8 +17,31 @@ class DemoController extends Controller
         return view('demo.login-page');
     }
 
+    public function postLoginPage(Request $request)
+    {
+        //定義輸入格式
+        $validator = Validator::make($request->all(), [
+            'userID' => ['required', 'regex:/^((([depm]([0-9]){7})|(t[0-9]{5}))(\\n\\r?|\\r\\n?|$)+)+$/i'],
+            'userPW' => 'required',
+        ]);
+        //檢查輸入
+        if ($validator->fails()) {
+            return Redirect::route('demo.login-page')
+                ->withErrors($validator)
+                ->withInput();
+        }
+        //記錄NID
+        $nid = $request->get('userID');
+        Session::put('nid', $nid);
+        //TODO: 處理資料
+
+
+        //跳轉至檢索頁面
+        return Redirect::route('demo.condition');
+    }
+
     public function getCondition()
     {
-        return view('demo.condition');
+        return view('demo.condition')->with('nid', Session::get('nid'));
     }
 }
