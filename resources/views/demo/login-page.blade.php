@@ -108,9 +108,9 @@
             <div>
                 目前使用
                 @if(Request::secure())
-                    <span style="font-size: 2em; color: green">https</span>
+                    <span style="font-size: 2em; color: green">HTTPS</span>
                 @else
-                    <span style="font-size: 2em; color: red">http</span>
+                    <span style="font-size: 2em; color: red">HTTP</span>
                 @endif
                 連線<br />
                 （此頁面僅供教學示範使用）
