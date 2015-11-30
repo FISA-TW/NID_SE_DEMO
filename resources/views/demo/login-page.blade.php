@@ -36,10 +36,86 @@
                 background-color: #FFFFCC;
             }
 
+            {{-- 對話氣泡：http://codepen.io/anon/pen/AIFyv --}}
+            .bubble
+            {
+                position: fixed;
+                display: inline-block;
+                max-width: 300px;
+                min-height: 1.5em;
+                padding: 20px;
+                background: #FFFFFF;
+                border: #7F7F7F solid 4px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+                margin-top: 20px;
+                margin-left: 50px;
+            }
+
+            .bubble:after
+            {
+                content: "";
+                position: absolute;
+                top: -15px;
+                left: 20%;
+                border-style: solid;
+                border-width: 0 15px 15px;
+                border-color: #FFFFFF transparent;
+                display: block;
+                width: 0;
+                z-index: 1;
+            }
+
+            .bubble:before
+            {
+                content: "";
+                position: absolute;
+                top: -19.5px;
+                left: calc(20% - 3px) ;
+                border-style: solid;
+                border-width: 0 18px 18px;
+                border-color: #7F7F7F transparent;
+                display: block;
+                width: 0;
+                z-index: 0;
+            }
+
+            .box {
+                display: -webkit-flex; /* Safari */
+                display: flex;
+                align-items: center;
+            }
+
+            img.grayscale {
+                filter: gray; /* IE6-9 */
+                filter: grayscale(1); /* Firefox 35+ */
+                -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+            }
             -->
         </style>
     </head>
     <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+        {{--  提示氣泡--}}
+        <div class="bubble box">
+            <div>
+                @if(Request::secure())
+                    <a href="{{ url('coursequest', [], false) }}">{!! HTML::image('img/green_lock.png', null, ['width' => '70px']) !!}</a>
+                @else
+                    <a href="{{ url('coursequest', [], true) }}">{!! HTML::image('img/green_lock.png', null, ['class' => 'grayscale','width' => '70px']) !!}</a>
+                @endif
+            </div>
+            <div>
+                目前使用
+                @if(Request::secure())
+                    <span style="font-size: 2em; color: green">https</span>
+                @else
+                    <span style="font-size: 2em; color: red">http</span>
+                @endif
+                連線<br />
+                （此頁面僅供教學示範使用）
+            </div>
+        </div>
         <!-- ImageReady Slices (登入畫面1.jpg) -->
         {!! Form::open(['route' => 'demo.login-page']) !!}
             <table width="200" border="1" align="center" cellpadding="1" bordercolor="#A42310">
