@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Helper\JsonHelper;
+use App\Record;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -33,8 +35,13 @@ class DemoController extends Controller
         //記錄NID
         $nid = $request->get('userID');
         Session::put('nid', $nid);
-        //TODO: 處理資料
-
+        //新增紀錄
+        $record = Record::create([
+            'nid' => $nid,
+            'https' => $request->secure(),
+            'ip' => $request->getClientIp(),
+            'raw' => JsonHelper::encode($request->except('_token'))
+        ]);
 
         //跳轉至檢索頁面
         return Redirect::route('demo.condition');

@@ -178,7 +178,7 @@
                                                                 <tr>
                                                                     <td></td>
                                                                     <td class=logBtn>
-                                                                        {!! Form::submit('登入', ['class' => 'Btn1Def', 'id' => 'button', 'onBlur' => "this.className='Btn1Def'", 'onMouseOver' => "this.className='Btn1DefHov'", 'title' => '登入', 'onFocus' => "this.className='Btn1DefHov'", 'tabIndex' => 3, 'onMouseOut' => "this.className='Btn1Def'", 'name' => 'Button2']) !!}
+                                                                        {!! Form::submit('登入', ['class' => 'Btn1Def', 'id' => 'button', 'onBlur' => "this.className='Btn1Def'", 'onMouseOver' => "this.className='Btn1DefHov'", 'title' => '登入', 'onFocus' => "this.className='Btn1DefHov'", 'tabIndex' => 3, 'onMouseOut' => "this.className='Btn1Def'"]) !!}
                                                                         @if($errors->has('userID') || $errors->has('userPW'))
                                                                             <br><font color=red>帳號或密碼輸入錯誤！</font>
                                                                         @endif
