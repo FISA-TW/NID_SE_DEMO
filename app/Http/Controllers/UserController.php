@@ -28,6 +28,8 @@ class UserController extends Controller
     public function __construct()
     {
         parent::__construct();
+        //強制https
+        $this->middleware('secure');
         //遊客限定
         $this->middleware('guest', [
             'only' => [

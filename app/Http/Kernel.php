@@ -33,5 +33,6 @@ class Kernel extends HttpKernel
         'role' => \App\Http\Middleware\RoleLimit::class,
         'perm' => \App\Http\Middleware\PermissionCheck::class,
         'allowRegister' => \App\Http\Middleware\RegisterLimit::class,
+        'secure' => \App\Http\Middleware\Secure::class,
     ];
 }
