@@ -61,7 +61,7 @@ class UserController extends Controller
                 'getIndex',
             ]
         ]);*/
-        //限工作人員
+        //限管理員
         $this->middleware('role:admin', [
             'only' => [
                 'getIndex',

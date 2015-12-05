@@ -13,7 +13,7 @@
 
 //Home page
 Route::get('/', [
-    'as' => 'home',
+    'as' => 'root',
     function () {
         //Redirect to fake login page
         return redirect()->route('demo.login-page');
@@ -34,6 +34,11 @@ Route::post('coursequest', [
 Route::get('coursequest/condition.jsp', [
     'as' => 'demo.condition',
     'uses' => 'DemoController@getCondition'
+]);
+
+//Dashboard
+Route::controller('dashboard', 'DashboardController', [
+    'getIndex' => 'home'
 ]);
 
 //Auth System
