@@ -25,6 +25,9 @@ return [
     ],
     //管理員
     'admin' => [
+        'Dashboard' => [
+            'Record' => 'dashboard/record'
+        ],
         '站點管理' => [
             '成員清單' => 'user'
         ]

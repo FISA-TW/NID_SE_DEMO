@@ -38,7 +38,8 @@ Route::get('coursequest/condition.jsp', [
 
 //Dashboard
 Route::controller('dashboard', 'DashboardController', [
-    'getIndex' => 'home'
+    'getIndex' => 'home',
+    'getRecord' => 'dashboard.record'
 ]);
 
 //Auth System
