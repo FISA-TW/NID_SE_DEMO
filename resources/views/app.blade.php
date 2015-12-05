@@ -43,7 +43,7 @@
                     {{-- 超連結 --}}
 
                     {{-- 版權宣告 --}}
-                    Copyright &copy; 2015-2016 FISA. All rights reserved.
+                    Copyright &copy; 2015-2016 {{ Config::get('site.name') }}. All rights reserved.
                 </p>
             </div>
         </footer>
