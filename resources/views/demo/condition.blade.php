@@ -3,7 +3,7 @@
     <head>
         <meta NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
         <title>查詢條件</title>
-        <link href="{{ asset('CSS/style.css') }}" rel="styleSheet" type="text/css">
+        <link href="{{ asset('coursequest-css/style.css') }}" rel="styleSheet" type="text/css">
     </head>
     <body>
         <center>
