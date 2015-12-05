@@ -14,8 +14,17 @@ class DashboardController extends Controller
     public function __construct()
     {
         parent::__construct();
+        $this->middleware('auth', [
+            'only' => [
+                'getIndex'
+            ]
+        ]);
         //限管理員
-        $this->middleware('role:admin');
+        $this->middleware('role:admin', [
+            'except' => [
+                'getIndex'
+            ]
+        ]);
     }
 
     public function getIndex()
