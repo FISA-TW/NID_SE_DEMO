@@ -1,0 +1,84 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: 'cwTeXHei';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+    url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+
+body {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-family: 'cwTeXHei', sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+body.fixed {
+    padding-top: 40px;
+}
+
+section {
+    min-height: 50vh;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: transparent;
+    opacity: 1;
+}
+
+section.green {
+    padding-top: 55px;
+    padding-bottom: 50px;
+    background-color: #3d7878;
+}
+
+section.grey {
+    background-color: #272727;
+}
+
+section.red {
+    background-color: #743a3a;
+}
+
+section.blue {
+    background-color: #5151a2;
+}
+
+.footer {
+    position: absolute;
+    z-index: 1500;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+}
+
+.footer > .container {
+    padding-top: 10px;
+}
+
+.footer > .container > p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn {
+    border: none;
+}
+
+.blue:hover {
+    border: none;
+}
+
+dd {
+    margin-bottom: 1em;
+}

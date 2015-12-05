@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'zh-tw',
 
     /*
     |--------------------------------------------------------------------------
@@ -137,6 +137,9 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        GrahamCampbell\Throttle\ThrottleServiceProvider::class,
+        Zizaco\Entrust\EntrustServiceProvider::class,
+        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
 
         //barryvdh/laravel-debugbar
         Barryvdh\Debugbar\ServiceProvider::class,
@@ -203,7 +206,9 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Carbon' => Carbon\Carbon::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-
+        'Throttle' => GrahamCampbell\Throttle\Facades\Throttle::class,
+        'Entrust' => Zizaco\Entrust\EntrustFacade::class,
+        'Gravatar' => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,
     ],
 
 ];

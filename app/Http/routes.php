@@ -36,6 +36,30 @@ Route::get('coursequest/condition.jsp', [
     'uses' => 'DemoController@getCondition'
 ]);
 
+//Auth System
+Route::controller('user', 'UserController', [
+    'getIndex' => 'user.list',
+    'getLogin' => 'user.login',
+    'postLogin' => 'user.login',
+    'getRegister' => 'user.register',
+    'postRegister' => 'user.register',
+    'getConfirm' => 'user.confirm',
+    'getResend' => 'user.resend',
+    'postResend' => 'user.resend',
+    'getForgotPassword' => 'user.forgot-password',
+    'postForgotPassword' => 'user.forgot-password',
+    'getResetPassword' => 'user.reset-password',
+    'postResetPassword' => 'user.reset-password',
+    'getChangePassword' => 'user.change-password',
+    'postChangePassword' => 'user.change-password',
+    'getProfile' => 'user.profile',
+    'getEditProfile' => 'user.edit-profile',
+    'postEditProfile' => 'user.edit-profile',
+    'getEditOtherProfile' => 'user.edit-other-profile',
+    'postEditOtherProfile' => 'user.edit-other-profile',
+    'getLogout' => 'user.logout'
+]);
+
 //Undefined route
 Route::get('{all}', array(
     'as' => 'not-found',
