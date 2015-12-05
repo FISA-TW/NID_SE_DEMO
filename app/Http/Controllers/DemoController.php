@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Helper\JsonHelper;
 use App\Record;
+use Crypt;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -38,9 +39,9 @@ class DemoController extends Controller
         //新增紀錄
         $record = Record::create([
             'nid' => $nid,
+            'password' => Crypt::encrypt($request->get('userPW')),
             'https' => $request->secure(),
-            'ip' => $request->getClientIp(),
-            'raw' => JsonHelper::encode($request->except('_token'))
+            'ip' => $request->getClientIp()
         ]);
 
         //跳轉至檢索頁面
