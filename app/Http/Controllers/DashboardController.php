@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 
 class DashboardController extends Controller
@@ -14,11 +15,6 @@ class DashboardController extends Controller
     public function __construct()
     {
         parent::__construct();
-        $this->middleware('auth', [
-            'only' => [
-                'getIndex'
-            ]
-        ]);
         //限管理員
         $this->middleware('role:admin', [
             'except' => [
@@ -29,6 +25,9 @@ class DashboardController extends Controller
 
     public function getIndex()
     {
+        if (!\Entrust::hasRole('admin')) {
+            return view('dashboard.guest');
+        }
         return view('dashboard.index');
     }
 
