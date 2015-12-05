@@ -16,7 +16,7 @@
         "barryvdh/laravel-ide-helper": "^2.1",
         "doctrine/dbal": "~2.3",
         "barryvdh/laravel-debugbar": "^2.0",
-        "graham-campbell/throttle": "^4.1",
+        "graham-campbell/throttle": "^5.0",
         "zizaco/entrust": "dev-laravel-5",
         "thomaswelton/laravel-gravatar": "~1.0"
     },
