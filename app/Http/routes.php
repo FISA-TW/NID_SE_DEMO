@@ -70,7 +70,7 @@ Route::controller('user', 'UserController', [
 Route::get('{all}', array(
     'as' => 'not-found',
     function () {
-        //Redirect to home page
-        return redirect()->route('home');
+        //Redirect to root path
+        return redirect()->route('root');
     }
 ))->where('all', '.*');
