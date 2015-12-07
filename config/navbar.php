@@ -29,7 +29,8 @@ return [
             'Record' => 'dashboard/record'
         ],
         '站點管理' => [
-            '成員清單' => 'user'
+            '成員清單' => 'user',
+            '記錄檢視器' => '!logs'
         ]
     ],
     //遊客

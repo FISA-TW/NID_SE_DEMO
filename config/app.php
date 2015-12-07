@@ -140,6 +140,7 @@ return [
         GrahamCampbell\Throttle\ThrottleServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
         Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 
         //barryvdh/laravel-debugbar
         Barryvdh\Debugbar\ServiceProvider::class,

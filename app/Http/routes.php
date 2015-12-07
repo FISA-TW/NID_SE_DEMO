@@ -66,6 +66,13 @@ Route::controller('user', 'UserController', [
     'getLogout' => 'user.logout'
 ]);
 
+//Log Viewer
+Route::get('logs', [
+    'as' => 'logs',
+    'uses' => '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index',
+    'middleware' => 'role:admin'
+]);
+
 //Undefined route
 Route::get('{all}', array(
     'as' => 'not-found',
