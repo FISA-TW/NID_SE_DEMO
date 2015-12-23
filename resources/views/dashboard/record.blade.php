@@ -63,7 +63,10 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading">記錄</div>
+                    <div class="panel-heading">
+                        記錄
+                        {!! link_to_route('dashboard.export', '[匯出]') !!}
+                    </div>
                     <div class="panel-body">
                         <table class="table table-bordered table-hover">
                             <thead>

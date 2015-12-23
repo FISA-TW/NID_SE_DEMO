@@ -37,6 +37,10 @@ Route::get('coursequest/condition.jsp', [
 ]);
 
 //Dashboard
+Route::get('dashboard/export', [
+    'as' => 'dashboard.export',
+    'uses' => 'DashboardController@export'
+]);
 Route::controller('dashboard', 'DashboardController', [
     'getIndex' => 'home',
     'getRecord' => 'dashboard.record'
@@ -74,10 +78,10 @@ Route::get('logs', [
 ]);
 
 //Undefined route
-Route::get('{all}', array(
+Route::get('{all}', [
     'as' => 'not-found',
     function () {
         //Redirect to root path
         return redirect()->route('root');
     }
-))->where('all', '.*');
+])->where('all', '.*');
