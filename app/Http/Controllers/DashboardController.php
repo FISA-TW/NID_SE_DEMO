@@ -36,7 +36,8 @@ class DashboardController extends Controller
         //Records
         $nid = Input::get('nid');
         if ($nid) {
-            $records = Record::where('nid', '=', $nid)->paginate(50);
+            $q = '%' . $nid . '%';
+            $records = Record::where('nid', 'like', $q)->paginate(50);
         } else {
             $records = Record::paginate(50);
         }
