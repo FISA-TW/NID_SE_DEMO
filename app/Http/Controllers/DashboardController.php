@@ -48,8 +48,8 @@ class DashboardController extends Controller
         ];
         if ($nid) {
             $stats['nid'] = [
-                'count' => Record::where('nid', '=', $nid)->count(),
-                'https' => Record::where('nid', '=', $nid)->where('https', '=', true)->count()
+                'count' => Record::where('nid', 'like', $q)->count(),
+                'https' => Record::where('nid', 'like', $q)->where('https', '=', true)->count()
             ];
         }
         return view('dashboard.record')->with('records', $records)->with('stats', $stats);
