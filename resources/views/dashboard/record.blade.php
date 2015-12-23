@@ -45,8 +45,8 @@
                                 <div class="well">
                                     <h3>全部</h3>
                                     Count: {{ $stats['total']['count'] }}<br />
-                                    <span class="text-success">✔</span>HTTPS: {{ $stats['total']['https'] }} ({{ sprintf('%.2f', $stats['total']['https'] / $stats['total']['count'] * 100) }}%)<br />
-                                    <span class="text-danger">✘</span>NON-HTTPS: {{ $stats['total']['count'] - $stats['total']['https'] }} ({{ sprintf('%.2f', ($stats['total']['count'] - $stats['total']['https']) / $stats['total']['count'] * 100) }}%)<br />
+                                    <span class="text-success">✔</span>HTTPS: {{ $stats['total']['https'] }} ({{ ($stats['total']['count']) ? sprintf('%.2f', $stats['total']['https'] / $stats['total']['count'] * 100) : 0 }}%)<br />
+                                    <span class="text-danger">✘</span>NON-HTTPS: {{ $stats['total']['count'] - $stats['total']['https'] }} ({{ ($stats['total']['count']) ? sprintf('%.2f', ($stats['total']['count'] - $stats['total']['https']) / $stats['total']['count'] * 100) : 0 }}%)<br />
                                 </div>
                             </div>
                             @if(Input::has('nid') && $stats['nid']['count'])
