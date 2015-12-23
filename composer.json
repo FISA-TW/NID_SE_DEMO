@@ -19,7 +19,8 @@
         "graham-campbell/throttle": "^5.0",
         "zizaco/entrust": "dev-laravel-5",
         "thomaswelton/laravel-gravatar": "~1.0",
-        "rap2hpoutre/laravel-log-viewer": "^0.4.3"
+        "rap2hpoutre/laravel-log-viewer": "^0.4.3",
+        "maatwebsite/excel": "~2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

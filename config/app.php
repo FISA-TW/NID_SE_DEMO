@@ -141,6 +141,7 @@ return [
         Zizaco\Entrust\EntrustServiceProvider::class,
         Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
         //barryvdh/laravel-debugbar
         Barryvdh\Debugbar\ServiceProvider::class,
@@ -210,6 +211,7 @@ return [
         'Throttle' => GrahamCampbell\Throttle\Facades\Throttle::class,
         'Entrust' => Zizaco\Entrust\EntrustFacade::class,
         'Gravatar' => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];
