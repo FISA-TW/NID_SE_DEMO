@@ -24,7 +24,7 @@ class DemoController extends Controller
     {
         //定義輸入格式
         $validator = Validator::make($request->all(), [
-            'userID' => ['required', 'regex:/^(([depm]([0-9]){7})|(t[0-9]{5}))$/i'],
+            'userID' => ['required', 'regex:/^(([depmv]([0-9]){7})|(t[0-9]{5}))$/i'],
             'userPW' => 'required',
         ]);
         //檢查輸入
